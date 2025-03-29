@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gastos e Ganhos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Gastos e Ganhos</h1>
+    <form id="calcForm">
+        <label for="kmPorLitro">Autonomia (KM por L/M³):</label>
+        <input type="number" id="kmPorLitro" placeholder="Ex.: 10" required>
+        
+        <label for="valorCombustivel">Valor do Combustível (L/M³):</label>
+        <input type="number" id="valorCombustivel" placeholder="Ex.: 6" required>
+        
+        <label for="totalAbastecido">Total Abastecido (R$):</label>
+        <input type="number" id="totalAbastecido" placeholder="Ex.: 100">
+        
+        <label for="totalGanho">Total Ganho (R$):</label>
+        <input type="number" id="totalGanho" placeholder="Ex.: 150" required>
+        
+        <label for="kmRodados">KMs Rodados:</label>
+        <input type="number" id="kmRodados" placeholder="Ex.: 100" required>
+        
+        <button type="button" onclick="calcular()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+    <script src="script.js"></script>
+</body>
+</html>
